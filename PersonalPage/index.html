@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Layon Martins Fonseca</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="css/mycss.css">
+		<link rel="stylesheet" href="css/animate.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script src="js/jquery-2.1.4.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		
+
+		<!-- my script -->
+		<script>
+			$(document).ready(function () {
+
+			function playBel() {
+				document.getElementById("bellsound").play();
+			}
+
+			//var for animate.css
+			var end = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+			$(".bell").click(function () {
+				playBel();
+				$(this).addClass('animated swing').one(
+					end, function () {
+						$(this).removeClass('animated swing');
+					});
+			});
+
+			$("#next").click(function () {
+				$(".navigate-right").click();
+				$(this).addClass('animated swing').one(
+					end, function () {
+						$(this).removeClass('animated swing');
+					});
+			});
+			$("#previous").click(function () {
+				$(".navigate-left").click();
+				$(this).addClass('animated swing').one(
+					end, function () {
+						$(this).removeClass('animated swing');
+					});
+			});
+			//check mousewheel for up or down little on class overflow
+			
+			var NotMouseUpOverflow = true;
+			$(".overflow").mouseover(function () {
+				NotMouseUpOverflow = false;
+			});
+			$(".overflow").mouseout(function () {
+				NotMouseUpOverflow = true;
+			})
+				
+
+			$(".reveal").on('mousewheel', function(event) {
+				if(NotMouseUpOverflow){
+				if(event.deltaY == 1)
+					$("#previous").click();
+				if(event.deltaY == -1)
+					$("#next").click();
+			}
+			});
+
+			$("#options").click(function () {
+				var x = $(this).val();
+				if(x != "menu"){
+				$(window.document.location).attr('href',x);
+				document.getElementById("options").selectedIndex = 0;
+				}
+			});
+
+			$(".bell").click();
+		});
+		</script>				
+	</head>
+
+	<body>
+	<audio src="Ding-small-bell.mp3" id="bellsound" preload="auto"></audio>
+	<div class="menu"> - <a href="#"> home </a> - 
+			<a href="#/1"> about me </a> - 
+			<a href="#/2"> projects </a> - 
+			<a href="#/3"> publications </a> - 
+			<a href="#/4"> knowledge </a> -
+			<a href="#/5"> courses </a> -
+			<a href="#/6"> experence </a> - 
+			<a href="#/7"> contacts </a> - 
+		</div>
+	<div class="menu2">
+		<select id="options">
+			<option value="menu">menu</option>
+			<option value="#">home</option>
+			<option value="#/1">about me</option>
+  			<option value="#/2">projects</option>
+  			<option value="#/3">publications</option>
+  			<option value="#/4">knowledge</option>
+  			<option value="#/5">courses</option>
+  			<option value="#/6">experence</option>
+  			<option value="#/7">contacts</option>
+		</select>
+	</div>
+	<div class="super">
+	<img src="img/placa.png" style="width: 1500px; height: 50px;"/>
+	</div>
+	<img class="welcome" class="animated rotateInDownLeft" src="img/welcome.png" />
+	<img class="bell" src="img/bell.png" />
+	<a id="next">
+		<img src="img/next.png" class="animated flipInY" style="width: 100%;" />
+	</a>
+	<a id="previous">
+		<img src="img/previous.png" class="animated flipInY" style="width: 100%;" />
+	</a>
+
+		<div class="reveal">
+		
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			<section style="text-align: center;">
+				<img width="350" class="animated zoomIn" data-src="img/perfil.png">
+				<h1 class="animated bounceInDown">Hey Guys :)</h1>
+				<p>This is my personal page where you meet
+				<a href="https://github.com/layonmartins" target="_blank">here</a>
+				on github.</p>
+				</section>
+
+				<section>
+					<h2>About me</h2>
+					<p>
+						Hello everybody! lol 
+					</p><p>My full name is Layon Martins Fonseca and I am twenty three years old. I'm graduated in information system in the University of State Minas Gerais UEMG - 2015. I have knowledge in developing the systems Web. I currently study tecnologias as, Ruby on Rails, frameworks front-end, libraries javascript and I am trying to learn English rsrs! I want stay pretty good in English.
+					</p>
+					</p>
+				</section>
+
+				<section>
+					<h2>Projects</h2>
+
+					<div class="overflow">
+					
+					<p>
+						<b>Development a game applied to education mathematical logic using the platform KINECT.</b> Project developed as scientific initiative in 2014 UEMG.
+					</p>
+					<p>
+					<b>Development of a system for the control of lending of equipments, tools and materials.</b>
+					 Project presented as monograph in 2015 UEMG.
+					</p>
+					
+					</div>
+				</section>
+
+				<section>
+					<h2>Publications</h2>
+
+					<div class="overflow">
+					<p>
+						...my publications here...<br/>
+						obs: in construction
+
+					</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Knowledge</h2>
+
+					<div class="overflow">
+					<p>
+						<ul>
+						<li>HTML5, CSS3 and JS;</li>
+						<li>BootStrap, Jquery, highcharts, datatables;</li>
+						<li>OO, Asp.Net MVC, Ruby on Rails;</li>
+						<li>C, C#, Java, Ruby;</li>
+						<li>MySql, SqlServer, SQlite;</li>
+						<li>Phonegap, JqueryMobile;</li>
+						<li>Kinect, WPF;</li>
+						<li>Windows, Ubuntu;</li>
+						<li>Gimp, etc...</li>
+						</ul>
+					</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Courses</h2>
+
+					<div class="overflow">
+					<p>
+						<ul>
+						<li>Bachelor Degree Information Systems - UEMG - Passos MG - 2015</li>
+						<li>HTML5 course - <i>'Curso em Video'</i> - Remote - 2015</li>
+						<li>English course - English Extreme - Passos MG - in progress...</li>
+						</ul>
+					</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Experence</h2>
+					<p>
+						<b><i>Vante Telecomunicações.</i> </b>Jan 2012 to Jan. 2013 <br>
+						Description: Technical networks.
+					</p>
+					<p>
+						<b><i>Central do Micro Ltda</i> </b>Jan 2013 to Jan. 2014 <br>
+						Description: Repair in laptops.
+					</p>
+					<p>
+						<b><i>Furnas Centrais Elétricas</i> </b>Apr 2014 to July 2015 <br>
+						Description: Web development Asp.net MVC intern.
+					</p>
+				</section>
+
+				<section id="contacts">
+					<h2>Contacts</h2>
+					<a href="https://br.linkedin.com/in/layonmartins" target="_blank"><img src="img/linkedin.png" title="My Linkedin"/></a>
+
+					<a href="https://layonmartins.wordpress.com/" target="_blank"><img src="img/wordpress.png" title="My Page in WordPress"/></a>
+
+					<a href="https://github.com/layonmartins" target="_blank"><img src="img/github.png" title="My GitHub"/></a>
+
+					<a href="mailto:layon_martins03@hotmail.com"> <img src="img/email.png" title="My email are: layonmartins03@gmail.com and layon_martins03@hotmail.com"/></a>
+
+					<a href="https://www.facebook.com/layon.m.fonseca" target="_blank"><img src="img/facebook.png" title="My facebook"/></a>
+
+					<a href="http://layonmartins.tumblr.com/" target="_blank"><img src="img/tumblr.png" title="My tumblr"/></a><br/>
+
+					<a href="https://twitter.com/layonmartins" target="_blank"><img src="img/twitter.png" title="My twitter"/></a>
+
+					<a href=" http://lattes.cnpq.br/1622019232073549" target="_blank"><img src="img/lattes.png" title="My currículo Lattes"/></a>
+
+				</section>
+
+				<section data-background="img/theend.gif">
+				</section>
+
+
+				
+			</div>
+
+		</div>
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

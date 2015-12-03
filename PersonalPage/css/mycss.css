@@ -1,0 +1,118 @@
+/*********************************************
+ * OWN STYLES
+ *********************************************/
+ body {
+ 	background-color: blue;
+ 	cursor: crosshair;
+ }
+ .menu {
+ 	display: block;
+ 	background-color: black;
+ 	min-height: 20px;
+ 	padding: 5px;
+ 	color: white;
+ }
+ .menu a {
+ 	font-size: 12px;
+ 	color: #f7f2d3;
+  	text-decoration: none;
+  	padding: 3px;
+ }
+ .menu2 {
+	display: none;
+	background-color: black;
+ 	min-height: 14px;
+ 	padding: 5px;
+ 	color: white;
+ }
+ .menu2 select {
+	background-color: black;
+	color: #f7f2d3;
+	width: 100px;
+	padding: 3px;
+ }
+ @media (max-width: 800px){
+ 	.menu {
+ 		display: none;
+ 	}
+ 	.menu2 {
+ 		display: block;
+ 	}
+ }
+ .super {
+ 	height: 50px;
+ 	background-color: black;
+ }
+#next {
+position: fixed;
+width: 10%;
+min-width: 90px;
+z-index: 50;
+right: 10px;
+top: 6%;
+}
+#next:hover{
+cursor: pointer;
+}
+#previous {
+position: fixed;
+width: 10%;
+min-width: 90px;
+z-index: 50;
+left: 10px;
+top: 6%;
+}
+#previous:hover{
+cursor: pointer;
+}
+.welcome {
+position: fixed;
+z-index: 50;
+left: 40%;
+top: 4%;
+min-width: 100px;
+width: 15%;
+max-width: 150px;
+-webkit-transform: rotate(8deg);
+transform: rotate(-8deg);
+}
+}
+.rotate {
+	top: 15%;
+	-webkit-transform: rotate(80deg);
+}
+.bell {
+position: fixed;
+z-index: 50;
+right: 40%;
+top: 5%;
+min-width: 20px;
+width: 15%;
+max-width: 50px;
+}
+.bell:hover{
+cursor: pointer;
+}
+.bell:active{
+
+}
+.overflow{
+width: 100%;
+max-height: 300px;
+overflow: auto; 
+z-index: 100;
+}
+#contacts img {
+min-width: 70px;
+width: 13%;
+max-width: 130px;
+}
+#contacts img:hover {
+cursor: pointer;
+-webkit-transform: rotate(8deg);
+transform: rotate(8deg);
+}
+
+p, h1, h2, h3, h4, h5, ul {
+cursor: text;
+}
