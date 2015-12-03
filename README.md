@@ -1,4 +1,4 @@
-# >> Welcome << T.T
+# Welcome T.T
 This is my personal page can be accessed [here](layonmartins.github.io)
 
 ## What was used?
