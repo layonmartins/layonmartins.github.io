@@ -11,9 +11,9 @@ This is my personal page can be accessed [here](layonmartins.github.io)
   
 ## Browser Support
 ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) |
-Other untested browsers...
+![Other untested browsers...]
 
 ## License
 The MIT License (c) 2015 - Layon Martins Fonseca
 
-## Thank you for visiting
+### Thank you for visiting
