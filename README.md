@@ -1,4 +1,4 @@
-# Welcome
+# >> Welcome << T.T
 This is my personal page can be accessed [here](layonmartins.github.io)
 
 ## What was used?
@@ -20,4 +20,4 @@ Basically I used the reveal.js main template and then I was editing and adding f
 The MIT License (c) 2015 - Layon Martins Fonseca
 
 ## Thank you for visiting
-bye bye
+bye bye!!
