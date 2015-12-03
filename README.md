@@ -8,12 +8,16 @@ This is my personal page can be accessed [here](layonmartins.github.io)
 * [jquery.mousewheel.js](https://github.com/jquery/jquery-mousewheel): A library js for capture the roll of the ball mouse.
 * [animate.css](https://daneden.github.io/animate.css/): A library css for create animation in element html.
 * And other more...
-  
+
+## Development
+Basically I used the reveal.js main template and then I was editing and adding features, even stay this wonderful site rsrs :)
+
 ## Browser Support
 ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) |
-![Other untested browsers...]
+<br> Other untested browsers...
 
 ## License
 The MIT License (c) 2015 - Layon Martins Fonseca
 
-### Thank you for visiting
+## Thank you for visiting
+bye bye
