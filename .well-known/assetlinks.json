@@ -36,6 +36,16 @@
     "sha256_cert_fingerprints":
     ["10:D3:F7:46:FC:E6:EB:AE:DD:FC:CD:8A:43:48:D3:22:65:16:CB:78:8D:49:35:2D:DC:5E:BD:80:1E:4E:63:F6"]
   }
+},
+
+  {
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "net.weg.wemob",
+    "sha256_cert_fingerprints":
+    ["1D:44:4B:69:4F:3A:01:1F:A3:8B:41:D8:67:81:72:41:8B:8B:52:42:3B:D3:89:E8:73:70:75:E0:15:48:6A:A7"]
+  }
 }
   
 ]
